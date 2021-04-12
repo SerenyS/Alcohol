@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+            
+       
+         
+             mc:Ignorable="d"
+             
+             x:Class="Alcohol.MainPage">
+
+
+    <StackLayout>
+        <Label Text="CAN YOU LEGALLY DRINK?" />
+        <Label Text="Select your Date of Birth" />
+        <DatePicker MinimumDate="01/01/1921"
+                    MaximumDate="01/01/2021"
+                    DateSelected="DatePicker_OnDateSelected"/>
+
+        <Label x:Name="display" />
+
+    </StackLayout>
+
+</ContentPage>
